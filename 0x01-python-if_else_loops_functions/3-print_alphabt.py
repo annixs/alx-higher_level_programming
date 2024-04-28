@@ -1,5 +1,6 @@
 #!/usr/bin/python3
-for i in range(97, 123):
-    if (i == 101) or (i == 113):
-        continue
-    print(chr(i).format(), end="")
+n = 0
+while n < 26:
+    if n != 4 and n != 16:
+        print('{:c}'.format(n + 97), end='')
+    n += 1

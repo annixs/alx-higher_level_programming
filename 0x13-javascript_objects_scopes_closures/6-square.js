@@ -1,17 +1,19 @@
 #!/usr/bin/node
-const SquareP = require('./5-square');
+// A class Square that defines and inherits
+// from Square of 5-square.js and create an
+// instance method called charPrint(c) that prints the
+// rectangle using the character c
 
-class Square extends SquareP {
+const SquareSupp = require('./5-square');
+
+class Square extends SquareSupp {
   charPrint (c) {
     if (c === undefined) {
-      c = 'X';
-    }
-    for (let i = 0; i < this.height; i++) {
-      let s = '';
-      for (let j = 0; j < this.width; j++) {
-        s += c;
+      this.print();
+    } else {
+      for (let i = 0; i < this.height; i++) {
+        console.log(c.repeat(this.width));
       }
-      console.log(s);
     }
   }
 }

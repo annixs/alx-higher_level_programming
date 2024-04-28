@@ -1,9 +1,11 @@
 #!/usr/bin/python3
+
+
 def multiple_returns(sentence):
-    if not sentence:
-        sentence = None
     if sentence:
-        sen_len = len(sentence)
+        len_s = len(sentence)
+        char = sentence[:1]
+        return(len_s, char)
     else:
-        sen_len = 0
-    return (sen_len, sentence if not sentence else sentence[:1])
+        sentence = None
+        return(0, sentence)

@@ -1,5 +1,7 @@
 #!/usr/bin/python3
-"""A module for square"""
+# Author: Babatunde Olaniyi
+
+"""Define a class Square."""
 
 
 class Square:

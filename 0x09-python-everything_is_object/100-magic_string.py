@@ -1,4 +1,15 @@
 #!/usr/bin/python3
+
+
+def call_counter(func):
+    def helper():
+        helper.calls += 1
+        return func()
+    helper.calls = 0
+
+    return helper
+
+
+@call_counter
 def magic_string():
-    magic_string.n = getattr(magic_string, 'n', 0) + 1
-    return ("BestSchool, " * (magic_string.n - 1) + "BestSchool")
+    return 'BestSchool, ' * (magic_string.calls - 1) + 'BestSchool'

@@ -1,7 +1,12 @@
 #!/usr/bin/node
+// Create an instance method called rotate() that exchanges
+// the width and the height of the rectangle and
+// an instance method called double() that multiples the
+// width and the height of the rectangle by 2
+
 class Rectangle {
   constructor (w, h) {
-    if ((w > 0) && (h > 0)) {
+    if (w > 0 && h > 0) {
       this.width = w;
       this.height = h;
     }
@@ -9,18 +14,12 @@ class Rectangle {
 
   print () {
     for (let i = 0; i < this.height; i++) {
-      let s = '';
-      for (let j = 0; j < this.width; j++) {
-        s += 'X';
-      }
-      console.log(s);
+      console.log('X'.repeat(this.width));
     }
   }
 
   rotate () {
-    const aux = this.width;
-    this.width = this.height;
-    this.height = aux;
+    [this.width, this.height] = [this.height, this.width];
   }
 
   double () {

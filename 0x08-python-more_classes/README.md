@@ -1,1 +1,5 @@
-Mywork explaining 0x08-python-more_classes tasks
+
+n - More Classes and Objects
+Python
+OOP
+
