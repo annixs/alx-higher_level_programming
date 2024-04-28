@@ -15,3 +15,7 @@ if __name__ == "__main__":
             print(res.read().decode('UTF-8'))
     except error.HTTPError as er:
         print('Error code:', er.code)
+<<<<<<< HEAD
+=======
+
+>>>>>>> ea1d434252a592ebf357e65388dd9b33ff0ffe48

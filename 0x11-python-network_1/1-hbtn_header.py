@@ -13,3 +13,7 @@ if __name__ == "__main__":
     request = urllib.request.Request(url)
     with urllib.request.urlopen(request) as response:
         print(dict(response.headers).get("X-Request-Id"))
+<<<<<<< HEAD
+=======
+
+>>>>>>> ea1d434252a592ebf357e65388dd9b33ff0ffe48

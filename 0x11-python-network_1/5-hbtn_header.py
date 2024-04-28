@@ -10,3 +10,7 @@ if __name__ == "__main__":
 
     r = requests.get(url)
     print(r.headers.get("X-Request-Id"))
+<<<<<<< HEAD
+=======
+
+>>>>>>> ea1d434252a592ebf357e65388dd9b33ff0ffe48

@@ -18,3 +18,7 @@ if __name__ == "__main__":
                 commits[i].get("commit").get("author").get("name")))
     except IndexError:
         pass
+<<<<<<< HEAD
+=======
+
+>>>>>>> ea1d434252a592ebf357e65388dd9b33ff0ffe48

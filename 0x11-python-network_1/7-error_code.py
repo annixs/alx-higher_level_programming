@@ -16,3 +16,7 @@ if __name__ == "__main__":
         print("Error code: {}".format(r.status_code))
     else:
         print(r.text)
+<<<<<<< HEAD
+=======
+
+>>>>>>> ea1d434252a592ebf357e65388dd9b33ff0ffe48
